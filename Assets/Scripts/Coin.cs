@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private GameObject _coinManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            _coinManager.GetComponent<CoinManager>().AddCoin();
             Destroy(gameObject);
         }
     }
