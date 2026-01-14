@@ -134,4 +134,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  coinManager: {fileID: 0}
+  _coinManager: {fileID: 0}

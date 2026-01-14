@@ -39,7 +39,7 @@ public class CoinManager : MonoBehaviour
     public void AddCoin()
     {
         coinCount++;
-        coinText.text = coinCount.ToString();
+        coinText.text = "Points: " + coinCount.ToString();
     }
 
 
